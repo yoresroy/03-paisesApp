@@ -38,9 +38,21 @@
     <h3>Traducciones</h3>
     <div class="row">
         <div class="col">
-            <span class="badge bg-primary -mr-1">{{ pais.translations }}</span>
+            <span class="badge bg-primary mr-1">{{ pais.translations['spa'].official }}</span>
+            <span class="badge bg-primary mr-1">{{ pais.translations['est'].official }}</span>
+            <span class="badge bg-primary mr-1">{{ pais.translations['fra'].official }}</span>
+            <span class="badge bg-primary mr-1">{{ pais.translations['ita'].official }}</span>
+            <span class="badge bg-primary mr-1">{{ pais.translations['jpn'].official }}</span>
+            <span class="badge bg-primary mr-1">{{ pais.translations['kor'].official }}</span>
+            <span class="badge bg-primary mr-1">{{ pais.translations['por'].official }}</span>
+            <span class="badge bg-primary mr-1">{{ pais.translations['zho'].official }}</span>
+            
         </div>
     </div>
+
+    <pre class="mt-5">
+        {{ pais | json }}
+    </pre>
 
 </ng-template>
 
